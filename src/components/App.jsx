@@ -8,6 +8,7 @@ import { useAuth } from 'hooks';
 import { Layout } from './Layuot';
 
 
+
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
@@ -22,7 +23,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <b>Refreshing user</b>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -52,6 +53,12 @@ export const App = () => {
     </Routes>
   );
 };
+
+
+
+
+
+
 
 
 /*export const App = () => {

@@ -4,6 +4,10 @@
   gap: 12px;
 }
 
-.username {
+.username, .user {
   font-weight: 700;
+}
+
+.username{
+  color: rgb(56, 173, 43) ;
 }

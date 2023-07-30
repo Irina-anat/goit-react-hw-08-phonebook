@@ -1,0 +1,36 @@
+.circle__wrapper{
+    width: auto;
+    height: auto;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(174, 249, 17, 1) 0%, rgba(41, 249, 17, 1) 39%, rgba(37, 193, 28, 1) 100%);
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+   /* animation-name: color-circle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;*/
+    animation: color-circle 3s linear infinite;
+
+}
+
+.circle__wrapper:hover .circle{
+    animation-play-state: paused;
+}
+
+@keyframes color-circle{
+    0%{
+    left: 0;
+    }
+    50%{
+    background: #0000ff;    
+    }
+    100%{
+    left: 1000px;
+    }
+}

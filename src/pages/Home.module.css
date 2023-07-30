@@ -1,0 +1,15 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+  }
+
+  .title {
+   font-weight: 600;
+   font-size: 48px;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   align-content: center;
+   color: rgb(56, 173, 43);
+  }
