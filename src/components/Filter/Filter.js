@@ -16,7 +16,7 @@ export const Filter = () => {
     <label>
       <input
         type="text"
-        placeholder="Find contacts by Name"
+        placeholder="Find contacts by name"
         value={filter}
         onChange={handleChange}
       />
