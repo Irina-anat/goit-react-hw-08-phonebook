@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from 'redux/contacts/filtersSlice';
 import { selectFilter } from 'redux/contacts/selectors';
+import css from '../ContactForm/ContactForm.module.css';
 
 export const Filter = () => {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ export const Filter = () => {
   };
 
   return (
-    <label>
+    <label className={css.form}>
       <input
         type="text"
         placeholder="Find contacts by name"
