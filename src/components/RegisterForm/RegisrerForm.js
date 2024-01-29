@@ -19,9 +19,9 @@ export const RegisterForm = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center">
+   
       <form
-        className={`needs-validation p-4 border rounded w-25`}
+        className={`needs-validation p-4 border rounded`}
         onSubmit={handleSubmit}
         autoComplete="off"
       >
@@ -45,6 +45,5 @@ export const RegisterForm = () => {
         </div>
         <button type="submit" className="btn btn-primary">Register</button>
       </form>
-    </div>
   );
 };

@@ -17,7 +17,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <form className="needs-validation p-4 border rounded w-25 mx-auto" onSubmit={handleSubmit} autoComplete="off">
+    <form className="needs-validation p-4 border rounded mx-auto"  onSubmit={handleSubmit} autoComplete="off">
       <div className="mb-3">
         <label htmlFor="email" className="form-label">Email *</label>
         <input type="email" className="form-control" id="email" name="email" placeholder="Your email" required />
