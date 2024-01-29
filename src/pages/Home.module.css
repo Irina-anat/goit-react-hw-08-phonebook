@@ -10,9 +10,9 @@
    margin: auto;
    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
    overflow: auto;
-   background: linear-gradient(315deg, rgba(255, 255, 0) 28%, rgba(48, 238, 226, 1) 68%, rgba(255, 255, 0) 88%);
+   background: linear-gradient(315deg, #00ff4c8a 28%, rgba(48, 238, 225, 0.655) 68%, rgb(0, 255, 145) 88%);
    /*rgb(111, 163, 216) 38%,*/
-   animation: gradient 12s ease infinite;
+   animation: gradient 12s ease none;
    background-size: 400% 400%;
    background-attachment: fixed;
 
@@ -51,8 +51,17 @@
       font-size: 26px;
       max-width: 860px;
    }
-
 }
+
+/* .animate__bounceInLeft{
+   animation-duration: 10s;
+   --animate-delay: 0.9s;
+} */
+
+/* .animate__animated.animate__bounce {
+   --animate-duration: 800ms;
+      --animate-delay: 0.9s;
+} */
 
 
 
@@ -76,7 +85,7 @@
    position: fixed;
    width: 200%;
    height: 12em;
-   animation: wave 10s  linear infinite;
+   animation:  wave 10s linear none;
    transform: translate3d(0, 0, 0);
    opacity: 0.8;
    bottom: 0;

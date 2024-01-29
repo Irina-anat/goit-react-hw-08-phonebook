@@ -8,6 +8,7 @@ import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
 import css from './Contacts.module.css'
 import { Helmet } from 'react-helmet-async';
+import 'animate.css';
 
 
 export default function Contacts() {
@@ -25,7 +26,7 @@ export default function Contacts() {
       <Helmet>
         <title>Your contacts</title>
       </Helmet>
-      <div className={css.container__phonebook} >
+      <div className={` animate__animated animate__zoomIn ${ css.container__phonebook }`}>
         <Section title="Phonebook">
           <ContactForm />
         </Section>
